@@ -1,6 +1,8 @@
 package com.project.calculator;
 
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -12,6 +14,8 @@ public class CalculatorGUI {
 
 	private JFrame frame;
 	private JTextField display;
+	
+	private String disCont="";
 
 	/**
 	 * Launch the application.
@@ -52,15 +56,16 @@ public class CalculatorGUI {
 		display.setBounds(50, 40, 212, 30);
 		frame.getContentPane().add(display);
 		display.setColumns(10);
-		
-		String disCont;
+		display.setFont(new Font("Arial", Font.BOLD, 14));
+		display.setForeground(Color.BLACK);
 		
 		// FIRST SET
 		
 		JButton seven = new JButton("7");
 		seven.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				disCont += "7";
+				display.setText(disCont);
 			}
 		});
 		seven.setBounds(50, 90, 42, 25);
