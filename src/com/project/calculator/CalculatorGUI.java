@@ -74,6 +74,8 @@ public class CalculatorGUI {
 		JButton eigth = new JButton("8");
 		eigth.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "8";
+				display.setText(disCont);
 			}
 		});
 		eigth.setBounds(100, 90, 42, 25);
@@ -82,6 +84,8 @@ public class CalculatorGUI {
 		JButton nine = new JButton("9");
 		nine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "9";
+				display.setText(disCont);
 			}
 		});
 		nine.setBounds(150, 90, 42, 25);
@@ -92,6 +96,8 @@ public class CalculatorGUI {
 		JButton four = new JButton("4");
 		four.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "4";
+				display.setText(disCont);
 			}
 		});
 		four.setBounds(50, 125, 42, 25);
@@ -100,6 +106,8 @@ public class CalculatorGUI {
 		JButton five = new JButton("5");
 		five.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "5";
+				display.setText(disCont);
 			}
 		});
 		five.setBounds(100, 125, 42, 25);
@@ -108,6 +116,8 @@ public class CalculatorGUI {
 		JButton six = new JButton("6");
 		six.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "6";
+				display.setText(disCont);
 			}
 		});
 		six.setBounds(150, 125, 42, 25); // x, y, width, height
@@ -118,6 +128,8 @@ public class CalculatorGUI {
 		JButton one = new JButton("1");
 		one.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "1";
+				display.setText(disCont);
 			}
 		});
 		one.setBounds(50, 160, 42, 25);
@@ -126,6 +138,8 @@ public class CalculatorGUI {
 		JButton two = new JButton("2");
 		two.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "2";
+				display.setText(disCont);
 			}
 		});
 		two.setBounds(100, 160, 42, 25);
@@ -134,6 +148,8 @@ public class CalculatorGUI {
 		JButton three = new JButton("3");
 		three.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "3";
+				display.setText(disCont);
 			}
 		});
 		three.setBounds(150, 160, 42, 25);
@@ -144,6 +160,8 @@ public class CalculatorGUI {
 		JButton zero = new JButton("0");
 		zero.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				disCont += "0";
+				display.setText(disCont);
 			}
 		});
 		zero.setBounds(50, 195, 93, 25);
