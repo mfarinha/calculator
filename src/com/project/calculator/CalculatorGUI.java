@@ -188,8 +188,7 @@ public class CalculatorGUI {
 		
 		JButton plus = new JButton("+");
 		plus.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) 
-			{
+			public void actionPerformed(ActionEvent arg0) {
 				operatorDisplay.setText("+");
 			}
 		});
@@ -197,14 +196,29 @@ public class CalculatorGUI {
 		frame.getContentPane().add(plus);
 		
 		JButton minus = new JButton("-");
+		minus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				operatorDisplay.setText("-");
+			}
+		});
 		minus.setBounds(200, 214, 60, 25);
 		frame.getContentPane().add(minus);
 		
 		JButton multiply = new JButton("*");
+		multiply.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operatorDisplay.setText("*");
+			}
+		});
 		multiply.setBounds(200, 179, 60, 25);
 		frame.getContentPane().add(multiply);
 		
 		JButton divide = new JButton("/");
+		divide.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				operatorDisplay.setText("/");
+			}
+		});
 		divide.setBounds(200, 144, 60, 25);
 		frame.getContentPane().add(divide);
 		
